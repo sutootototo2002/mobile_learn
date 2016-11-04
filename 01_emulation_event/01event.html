@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>event</title>
+    <style type="text/css">
+        #box{
+            width:100px;
+            height:100px;
+            border:1px solid red;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+  <div id="box"></div>
+</body>
+  <script type="text/javascript">
+      var oBox=document.getElementById('box');
+     /* oBox.onclick=function() {
+          alert('suxiaoyan');
+      }
+      oBox.ontouchend=function(){
+          alert('suxiaoyan_ontouchend');
+      }*/
+     oBox.addEventListener('touchend',function(){
+         alert('suxiaoyan is nb!');
+     },false)
+
+  </script>
+</html>
