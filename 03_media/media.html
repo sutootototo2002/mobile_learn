@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>viewport</title>
+    <style type="text/css">
+        body{overflow:hidden;margin:0 auto;}
+        #box{margin:0 auto; }
+        @media all and (min-width:1200px){
+            #box{
+                width:1200px;
+                height:400px;
+                background:red; //符合特性时，容器的颜色为橘红色
+            }
+        }
+        @media all and (min-width:1024px) and (max-width:1200px){
+            #box{
+                width:1024px;
+                height:400px;
+                background:blue; //符合特性时，容器的颜色为橘红色
+            }
+        }
+        @media all and (min-width:400px) and (max-width:1023px){
+            #box{
+                width:400px;
+                height:300px;
+                background:yellow; //符合特性时，容器的颜色为橘红色
+            }
+        }
+        @media all and (min-width:220px) and (max-width:399px){
+            #box{
+                width:200px;
+                height:300px;
+                background:orange; //符合特性时，容器的颜色为橘红色
+            }
+        }
+        /*
+        pc 1024  ipad 1024 mobile 400 220
+        min-width:1200px 分辨率 最小在1200之上
+        max-width:1024px 分辨率在1024以下 1200之上
+        */
+
+    </style>
+</head>
+<body>
+<div id="box">
+
+</div>
+</body>
+</html>
